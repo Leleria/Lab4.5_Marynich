@@ -10,7 +10,6 @@ namespace testing_lab4._5
     {
         public static int Do(float x)
         {
-            // x = (float)Math.Round(x, 1);
 
             if (x * 10 == (float)Math.Round(x, 1) * 10)
             {
