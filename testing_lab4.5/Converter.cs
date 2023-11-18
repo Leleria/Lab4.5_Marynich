@@ -35,7 +35,7 @@ namespace testing_lab4._5
                     return -2000;
                 }
             }
-                throw new ArgumentException("Попробуйте другое число");
+                throw new ArgumentException("Число должно быть с одним знаком после запятой");
         }
     }
 }
