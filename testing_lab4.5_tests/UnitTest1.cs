@@ -63,5 +63,13 @@ namespace testing_lab4._5_tests
 
             Assert.AreEqual(expect, actual);
         }
+
+        [TestCase(-30.54f)]
+        [TestCase(100.64f)]
+        [TestCase(0.74f)]
+        public void NumberOfDecimalPlacesIsNotDifferent1(float number)
+        {
+            Assert.Throws<ArgumentException>(() => Converter.Do(number));
+        }
     }
 }
